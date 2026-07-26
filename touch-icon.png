@@ -1,0 +1,20 @@
+---
+layout: base.njk
+permalink: /
+---
+<p class="mission">We all leave a trail of data behind us; smartwatches, banks, inboxes, medical files. <span class="q">What if you claimed the lot and put modern algorithms to work on it? Could a machine learn to understand you? Could it help you choose the right goals, break them into day-sized actions, and take the schlep off your plate?</span></p>
+
+<p class="submission">Eudaemon is one person finding out. The archive is <b>the lakes</b>; the analysis that tries to understand is <b>the deep twin</b>; the machinery that breaks down and prices goals is <b>Telos</b>; the schlep execution agent is <b>Jarvis</b>. This log documents the attempt, and it starts where an honest project should: by attacking the idea before building it.</p>
+
+<p class="status-line"><span class="dot"></span><b>Now:</b> {{ site.now }} &nbsp;·&nbsp; updated {{ site.nowUpdated }}</p>
+
+<h2 class="section">The log</h2>
+<ul class="entries">
+{%- for post in collections.posts | reverse %}
+  <li>
+    <span class="e-date">{{ post.date | dateDisplay }}</span>
+    <span class="e-no">{{ post.data.series | padSeries }}</span><a class="e-title" href="{{ post.url }}">{{ post.data.title }}</a>
+    <p class="e-sum">{{ post.data.summary }}</p>
+  </li>
+{%- endfor %}
+</ul>

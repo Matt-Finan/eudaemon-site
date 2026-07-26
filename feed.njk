@@ -1,0 +1,28 @@
+---
+layout: base.njk
+---
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":{{ title | dump | safe }},"datePublished":"{{ page.date | rfc3339 }}","author":{"@type":"Person","name":"{{ site.author }}"},"url":"{{ site.url }}{{ page.url }}","description":{{ summary | dump | safe }}}
+</script>
+<article>
+  <p class="crumb"><a href="/">Log</a> · Entry {{ series | padSeries }}</p>
+  <h1 class="entry">{{ title }}</h1>
+  <div class="metabox">
+    <span><b>Published</b> {{ page.date | dateDisplay }}</span>
+    <span><b>Status</b> {{ status or "entry" }}</span>
+    {% if updated %}<span><b>Updated</b> {{ updated }}</span>{% endif %}
+    <span><b>Revisions</b> {{ revisions or "none yet" }}</span>
+  </div>
+
+  {{ content | safe }}
+
+  <p class="endmark"><span></span></p>
+
+  {% set posts = collections.posts %}
+  <div class="pagenav">
+  {%- for p in posts %}{% if p.url == page.url %}
+    <span>{% if not loop.first %}{% set pv = posts[loop.index0 - 1] %}<a href="{{ pv.url }}">← {{ pv.data.series | padSeries }} · {{ pv.data.title }}</a>{% endif %}</span>
+    <span>{% if not loop.last %}{% set nx = posts[loop.index0 + 1] %}<a href="{{ nx.url }}">{{ nx.data.series | padSeries }} · {{ nx.data.title }} →</a>{% endif %}</span>
+  {% endif %}{% endfor -%}
+  </div>
+</article>

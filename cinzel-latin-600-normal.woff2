@@ -1,0 +1,177 @@
+/* EUDAEMON · eudaemon.uk
+   Palette from the brand panel: cream ground, ink, gold.
+   The gold dot is the system's atom: status, entry numbers, section
+   markers, end-of-post sign-off, and the changed-mind marker. */
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('/assets/fonts/cinzel-latin-500-normal.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Cinzel';
+  src: url('/assets/fonts/cinzel-latin-600-normal.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/assets/fonts/newsreader-latin-400-normal.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/assets/fonts/newsreader-latin-500-normal.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/assets/fonts/newsreader-latin-600-normal.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/assets/fonts/newsreader-latin-400-italic.woff2') format('woff2');
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+
+:root {
+  --cream: #F1EBDF;
+  --ink: #131C2E;
+  --gold: #C99B3F;
+  --gold-bright: #D9A441;
+  --gold-text: #7E6015;
+  --bg: var(--cream);
+  --fg: var(--ink);
+  --fg-soft: #4A5164;
+  --meta: #6B6450;
+  --link: #2C5E8A;
+  --rule: #D8CFBB;
+  --card: #EDE6D6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #10182A;
+    --fg: #E8E1D2;
+    --fg-soft: #B8B2A2;
+    --meta: #8B8676;
+    --link: #8FB6D9;
+    --rule: #26314A;
+    --card: #172138;
+    --gold: #D9A441;
+    --gold-text: #D9A441;
+  }
+}
+
+* { box-sizing: border-box; }
+html { font-size: 19px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem; }
+
+/* Masthead */
+header.site { padding: 2.4rem 0 1.3rem; }
+.mast { display: flex; align-items: center; gap: 0.85rem; text-decoration: none; color: var(--fg); }
+.mark { flex: 0 0 auto; }
+.wordmark {
+  font-family: 'Cinzel', 'Newsreader', serif;
+  font-size: 1.05rem; letter-spacing: 0.42em; font-weight: 600;
+  text-transform: uppercase; translate: 0 1px;
+}
+nav.site { margin-top: 1.1rem; font-size: 0.8rem; letter-spacing: 0.13em; text-transform: uppercase; }
+nav.site a { color: var(--fg-soft); text-decoration: none; margin-right: 1.35rem; }
+nav.site a:hover { color: var(--gold); }
+nav.site a.here { color: var(--fg); border-bottom: 2px solid var(--gold); padding-bottom: 2px; }
+.rule { border: 0; border-top: 1px solid var(--rule); margin: 0; }
+
+/* The gold dot */
+.dot { display: inline-block; width: 0.5em; height: 0.5em; border-radius: 50%; background: var(--gold); margin: 0 0.45em 0.06em 0; }
+
+/* Home */
+.mission { margin: 2.3rem 0 0.4rem; font-size: 1.4rem; line-height: 1.45; font-weight: 500; max-width: 36rem; }
+.mission .q { font-style: italic; }
+.submission { color: var(--fg-soft); max-width: 36rem; margin-top: 0.8rem; }
+.status-line { margin: 1.8rem 0 0; font-size: 0.85rem; color: var(--meta); letter-spacing: 0.04em; }
+.status-line b { color: var(--fg); font-weight: 600; }
+
+h2.section {
+  font-family: 'Cinzel', serif; font-size: 0.76rem; letter-spacing: 0.34em;
+  text-transform: uppercase; color: var(--meta); margin: 2.9rem 0 0.4rem; font-weight: 600;
+}
+ul.entries { list-style: none; margin: 0; padding: 0; }
+ul.entries li { padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
+.e-no { font-family: 'Cinzel', serif; color: var(--gold-text); font-size: 0.85rem; letter-spacing: 0.18em; margin-right: 0.55rem; }
+.e-title { font-size: 1.12rem; font-weight: 600; text-decoration: none; color: var(--fg); }
+.e-title:hover { color: var(--link); }
+.e-date { float: right; color: var(--meta); font-size: 0.82rem; margin-top: 0.25rem; }
+.e-sum { margin: 0.35rem 0 0; color: var(--fg-soft); font-size: 0.95rem; }
+
+.standing { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.9rem; }
+.standing a { display: block; text-decoration: none; color: var(--fg); border: 1px solid var(--rule); padding: 0.9rem 1rem; background: var(--card); }
+.standing a:hover { border-color: var(--gold); }
+.standing .s-t { font-weight: 600; }
+.standing .s-d { font-size: 0.85rem; color: var(--fg-soft); margin-top: 0.2rem; }
+.standing .s-m { font-size: 0.75rem; color: var(--meta); margin-top: 0.55rem; }
+
+/* Articles */
+article { margin-top: 2.1rem; }
+.crumb { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--meta); }
+.crumb a { color: var(--meta); text-decoration: none; }
+h1.entry { font-size: 2rem; line-height: 1.18; font-weight: 600; margin: 0.5rem 0 0.9rem; letter-spacing: -0.01em; }
+.metabox {
+  font-size: 0.82rem; color: var(--meta);
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  padding: 0.55rem 0; margin: 0 0 1.9rem;
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+}
+.metabox b { color: var(--fg-soft); font-weight: 600; }
+article p { margin: 0 0 1.25rem; }
+article h2 { font-size: 1.22rem; margin: 2.2rem 0 0.8rem; font-weight: 600; }
+article h2::before { content: ""; display: inline-block; width: 0.42em; height: 0.42em; border-radius: 50%; background: var(--gold); margin-right: 0.55em; vertical-align: 0.12em; }
+article h3 { font-size: 1.02rem; margin: 1.8rem 0 0.6rem; font-weight: 600; }
+article a { color: var(--link); }
+article ul, article ol { padding-left: 1.3rem; margin: 0 0 1.25rem; }
+article li { margin-bottom: 0.35rem; }
+article ul { list-style: none; }
+article ul > li::before { content: ""; display: inline-block; width: 0.34em; height: 0.34em; border-radius: 50%; background: var(--gold); margin: 0 0.55em 0.12em -1.05em; }
+article blockquote { margin: 1.4rem 0; padding: 0 0 0 1rem; border-left: 2px solid var(--rule); color: var(--fg-soft); font-style: italic; }
+article hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+article code { font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace; font-size: 0.85em; background: var(--card); padding: 0.1em 0.35em; border-radius: 3px; }
+
+/* Tables: verdict matrices are core content and they are wide */
+.table-scroll, article table { max-width: 100%; }
+article table { border-collapse: collapse; font-size: 0.85rem; margin: 1.4rem 0; display: block; overflow-x: auto; white-space: normal; }
+article th, article td { border: 1px solid var(--rule); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+article th { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--meta); background: var(--card); }
+article tr:nth-child(even) td { background: color-mix(in srgb, var(--card) 55%, transparent); }
+
+/* The changed-mind marker */
+.revised { border-left: 3px solid var(--gold); background: var(--card); padding: 0.75rem 1rem; margin: 1.4rem 0; font-size: 0.93rem; }
+.revised .rev-label { display: block; font-weight: 600; color: var(--gold-text); font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.3rem; }
+.revised p { margin: 0 0 0.5rem; }
+.revised p:last-child { margin: 0; }
+
+.endmark { margin: 2.3rem 0 0; }
+.endmark span { display: inline-block; width: 0.55em; height: 0.55em; border-radius: 50%; background: var(--gold); }
+.pagenav { display: flex; justify-content: space-between; gap: 1rem; margin: 2.4rem 0 0; font-size: 0.9rem; }
+.pagenav a { color: var(--link); text-decoration: none; }
+
+footer.site { margin-top: 4rem; padding: 1.5rem 0 3rem; border-top: 1px solid var(--rule); font-size: 0.83rem; color: var(--meta); }
+footer.site a { color: var(--fg-soft); text-decoration: none; margin-right: 1.3rem; }
+footer.site a:hover { color: var(--gold); }
+.foot-line { margin-top: 0.7rem; }
+
+@media (max-width: 640px) {
+  html { font-size: 17px; }
+  .standing { grid-template-columns: 1fr; }
+  .e-date { float: none; display: block; margin: 0.1rem 0 0; }
+  nav.site a { margin-right: 0.9rem; }
+}
+
+.skip { position: absolute; left: -999px; top: 0; background: var(--card); color: var(--fg); padding: 0.5rem 1rem; z-index: 10; }
+.skip:focus { left: 0.5rem; top: 0.5rem; }

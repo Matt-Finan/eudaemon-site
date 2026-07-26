@@ -1,0 +1,23 @@
+{
+  "name": "eudaemon-site",
+  "version": "1.0.0",
+  "description": "eudaemon.uk — a notebook that happens to be public",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  },
+  "dependencies": {
+    "@fontsource/cinzel": "^5.3.0",
+    "@fontsource/newsreader": "^5.3.0",
+    "markdown-it": "^14.3.0",
+    "markdown-it-container": "^4.0.0"
+  },
+  "private": true
+}
