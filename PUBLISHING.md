@@ -4,6 +4,12 @@
 
 ---
 
+## ⚠ The one rule that matters more than all the others
+
+**This repository is public and its history is permanent.** Never upload, paste or commit: datasets or exports from the lakes, analysis outputs containing personal data, prompts or transcripts that mention other people, credentials or API keys, or unpublished personal notes. Blog posts and site files only. If something sensitive ever lands here by mistake, deleting the file does NOT remove it from history; treat it as published and ask a Claude session to help rotate/contain immediately.
+
+---
+
 ## Publish a new entry (the weekly job, ~2 minutes of mechanics)
 
 1. Go to **github.com → this repository → `src/posts`**
@@ -15,6 +21,7 @@
    - `series:` the entry number as a plain number (4, not 04)
    - `summary:` one or two sentences for the homepage and RSS
 5. Click **Commit changes** (green button, twice)
+6. Glance at the homepage "Now:" line; if it's gone stale, update `now` and `nowUpdated` in `src/_data/site.json` in the same visit (a stale status line reads as an abandoned project)
 
 That's it. The site rebuilds itself; the entry is live at eudaemon.uk in about a minute. If it isn't after five, look at the repository's **Actions** tab; a red cross means the build failed, and the usual cause is broken front matter (a missing `---` or a stray colon in the title; put the title in quotes if it contains one).
 
