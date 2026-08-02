@@ -40,8 +40,9 @@
   </a>
   <nav class="site">
     <a href="/" {% if page.url == "/" %}class="here"{% endif %}>Log</a>
+    <a href="/blueprint/" {% if page.url == "/blueprint/" %}class="here"{% endif %}>Blueprint</a>
     <a href="/about/" {% if page.url == "/about/" %}class="here"{% endif %}>About</a>
-    <a href="/feed.xml">RSS</a>
+    <a href="/feed/" class="nav-rss {% if page.url == "/feed/" %}here{% endif %}">RSS</a>
   </nav>
 </header>
 <hr class="rule">
@@ -51,7 +52,7 @@
 </main>
 
 <footer class="site">
-  <a href="/feed.xml">RSS</a><a href="mailto:{{ site.contact }}">{{ site.contact }}</a><a href="{{ site.repo }}" rel="me">Site source</a>
+  <a href="/feed/">RSS</a><a href="mailto:{{ site.contact }}">{{ site.contact }}</a><a href="{{ site.repo }}" rel="me">Site source</a>
   <div class="foot-line">© 2026 {{ site.author }} · eudaemon.uk · a notebook that happens to be public</div>
 </footer>
 

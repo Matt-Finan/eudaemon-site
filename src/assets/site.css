@@ -83,10 +83,11 @@ header.site { padding: 2.4rem 0 1.3rem; }
   font-size: 1.05rem; letter-spacing: 0.42em; font-weight: 600;
   text-transform: uppercase; translate: 0 1px;
 }
-nav.site { margin-top: 1.1rem; font-size: 0.8rem; letter-spacing: 0.13em; text-transform: uppercase; }
+nav.site { margin-top: 1.1rem; font-size: 0.8rem; letter-spacing: 0.13em; text-transform: uppercase; display: flex; flex-wrap: wrap; }
 nav.site a { color: var(--fg-soft); text-decoration: none; margin-right: 1.35rem; }
 nav.site a:hover { color: var(--gold); }
 nav.site a.here { color: var(--fg); border-bottom: 2px solid var(--gold); padding-bottom: 2px; }
+nav.site a.nav-rss { margin-left: auto; margin-right: 0; }
 .rule { border: 0; border-top: 1px solid var(--rule); margin: 0; }
 
 /* The gold dot */
@@ -141,6 +142,10 @@ article ul { list-style: none; }
 article ul > li::before { content: ""; display: inline-block; width: 0.34em; height: 0.34em; border-radius: 50%; background: var(--gold); margin: 0 0.55em 0.12em -1.05em; }
 article blockquote { margin: 1.4rem 0; padding: 0 0 0 1rem; border-left: 2px solid var(--rule); color: var(--fg-soft); font-style: italic; }
 article hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+article img { display: block; max-width: 100%; height: auto; margin: 1.6rem 0 0.5rem; }
+article p:has(> img) + p { font-size: 0.85rem; color: var(--meta); margin-top: -0.2rem; }
+article img[src$=".svg"] { width: 100%; }
+figure { margin: 1.6rem 0; }
 article code { font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace; font-size: 0.85em; background: var(--card); padding: 0.1em 0.35em; border-radius: 3px; }
 
 /* Tables: verdict matrices are core content and they are wide */

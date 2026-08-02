@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 226" font-family="Newsreader, Georgia, 'Times New Roman', serif" role="img" aria-label="The working method: the idea is broken apart, its assumptions listed, attacked by reviewers, the blueprint fixed, then tested; results update the idea. The gold dot marks where this entry stands.">
+  <style>
+    .ink{stroke:#131C2E;fill:none;stroke-width:1.6}
+    .hair{stroke:#131C2E;fill:none;stroke-width:1.2}
+    .box{fill:#EDE6D6;stroke:#131C2E;stroke-width:1.5}
+    .tink{fill:#131C2E;stroke:none}
+    .soft{fill:#4A5164;stroke:none}
+    .meta{fill:#6B6450;stroke:none}
+    .eno{fill:#7E6015;stroke:none}
+    .gold{fill:#C99B3F;stroke:none}
+    .ahf{fill:#131C2E;stroke:none}
+    @media (prefers-color-scheme: dark){
+      .ink,.hair{stroke:#E8E1D2}
+      .box{fill:#172138;stroke:#E8E1D2}
+      .tink{fill:#E8E1D2}
+      .soft{fill:#B8B2A2}
+      .meta{fill:#8B8676}
+      .eno{fill:#D9A441}
+      .gold{fill:#D9A441}
+      .ahf{fill:#E8E1D2}
+    }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0.8 0.9 L 8.8 5 L 0.8 9.1 Z" class="ahf"/>
+    </marker>
+  </defs>
+
+  <!-- inner loop arc: fix the blueprint, back to break it apart -->
+  <path class="hair" d="M 624 74 C 624 34, 216 34, 216 72" marker-end="url(#ah)"/>
+  <text x="420" y="30" text-anchor="middle" font-size="11.5" font-style="italic" class="meta">repeat until it stops breaking</text>
+
+  <!-- nodes -->
+  <g>
+    <rect x="21"  y="78" width="118" height="44" rx="6" class="box"/>
+    <rect x="157" y="78" width="118" height="44" rx="6" class="box"/>
+    <rect x="293" y="78" width="118" height="44" rx="6" class="box"/>
+    <rect x="429" y="78" width="118" height="44" rx="6" class="box"/>
+    <rect x="565" y="78" width="118" height="44" rx="6" class="box"/>
+    <rect x="701" y="78" width="118" height="44" rx="6" class="box"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="80"  y="97"><tspan class="eno" font-size="9.5" letter-spacing="1.5">01</tspan></text>
+    <text x="216" y="97"><tspan class="eno" font-size="9.5" letter-spacing="1.5">02</tspan></text>
+    <text x="352" y="97"><tspan class="eno" font-size="9.5" letter-spacing="1.5">03</tspan></text>
+    <text x="488" y="97"><tspan class="eno" font-size="9.5" letter-spacing="1.5">04</tspan></text>
+    <text x="624" y="97"><tspan class="eno" font-size="9.5" letter-spacing="1.5">05</tspan></text>
+    <text x="760" y="97"><tspan class="eno" font-size="9.5" letter-spacing="1.5">06</tspan></text>
+  </g>
+  <g font-size="13.5" font-weight="500" text-anchor="middle" class="tink">
+    <text x="80"  y="113">The idea</text>
+    <text x="216" y="113">Break it apart</text>
+    <text x="352" y="113">The assumptions</text>
+    <text x="488" y="113">Attack it</text>
+    <text x="624" y="113">Fix the blueprint</text>
+    <text x="760" y="113">Test it</text>
+  </g>
+  <g font-size="11" text-anchor="middle" class="soft">
+    <text x="80"  y="141">entry 00</text>
+    <text x="216" y="141">~100 parts</text>
+    <text x="352" y="141">what must be true</text>
+    <text x="488" y="141">eight reviewers</text>
+    <text x="624" y="141">version N</text>
+    <text x="760" y="141">pass marks first</text>
+  </g>
+
+  <!-- chain arrows -->
+  <line x1="141" y1="100" x2="151" y2="100" class="ink" marker-end="url(#ah)"/>
+  <line x1="277" y1="100" x2="287" y2="100" class="ink" marker-end="url(#ah)"/>
+  <line x1="413" y1="100" x2="423" y2="100" class="ink" marker-end="url(#ah)"/>
+  <line x1="549" y1="100" x2="559" y2="100" class="ink" marker-end="url(#ah)"/>
+  <!-- fix → test, the gold dot riding the arrow -->
+  <line x1="685" y1="100" x2="695" y2="100" class="ink" marker-end="url(#ah)"/>
+  <circle cx="689" cy="100" r="5" class="gold"/>
+
+  <!-- outer return: test results revise the idea -->
+  <path class="ink" d="M 812 122 C 812 204, 44 204, 44 126" marker-end="url(#ah)"/>
+  <text x="420" y="206" text-anchor="middle" font-size="11.5" font-style="italic" class="meta">results update the idea</text>
+</svg>

@@ -3,6 +3,7 @@ title: The premise
 date: 2026-07-25
 series: 0
 status: entry
+revisions: 1 (02.08.2026)
 summary: What I'm building, why now, and the question everything else depends on.
 ---
 
@@ -39,5 +40,9 @@ The internet does not lack announcements of personal AI. What it lacks is follow
 It's also, first, an archive for me. I'll write roughly weekly: what I did, what I didn't and what I believed at the time. The vision I have now likely won't survive unchanged, and I'd rather keep a dated record of the mind changing than a tidied-up story written afterwards.
 
 Coming next. Entry 01: how I broke the idea into nineteen testable hypotheses. Entry 02: the tests, and the failure criteria written before running them.
+
+::: revised 02.08.2026
+Nineteen became thirty-nine: the blueprint review showed where the thinking was too coarse. The story is [entry 01](/log/01-the-blueprint/).
+:::
 
 I don't know if Eudaemon works. Deep twin might predict me no better than a coin toss. Finding out costs a few weekends, let's see what happens.
