@@ -1,4 +1,3 @@
-
 ---
 title: Watch or try
 date: 2026-08-30
