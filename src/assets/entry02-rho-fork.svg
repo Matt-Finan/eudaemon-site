@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 258" font-family="Newsreader, Georgia, 'Times New Roman', serif" role="img" aria-label="The first test: how strongly does one day predict the next? Rho is the day-to-day correlation, running 0 to 1: at 0 the days vary freely, at 1 each day repeats the last. Low rho: days vary freely, life supplies comparisons on its own, watch first and experiment to confirm; centre of gravity a watch engine. High rho: each day repeats the last, watching is slow and the comparisons come loaded, the evidence has to be manufactured; centre of gravity a test engine. No pass mark; whatever comes back sets what gets built first.">
+  <style>
+    .ink{stroke:#131C2E;fill:none;stroke-width:1.6}
+    .hair{stroke:#131C2E;fill:none;stroke-width:1.2}
+    .dash{stroke:#131C2E;fill:none;stroke-width:1.2;stroke-dasharray:3 4}
+    .box{fill:#EDE6D6;stroke:#131C2E;stroke-width:1.5}
+    .work{fill:#D5CAAE;stroke:none}
+    .tink{fill:#131C2E;stroke:none}
+    .bar{fill:#131C2E;stroke:none}
+    .soft{fill:#4A5164;stroke:none}
+    .meta{fill:#6B6450;stroke:none}
+    .eno{fill:#7E6015;stroke:none}
+    .gold{fill:#C99B3F;stroke:#131C2E;stroke-width:0.9}
+    .garr{stroke:#C99B3F;fill:none;stroke-width:2}
+    .coin{stroke:#7E6015;fill:none;stroke-width:1.6}
+    .cointxt{fill:#7E6015;stroke:none}
+    .ahf{fill:#131C2E;stroke:none}
+    .gahf{fill:#C99B3F;stroke:none}
+    @media (prefers-color-scheme: dark){
+      .ink,.hair,.dash{stroke:#E8E1D2}
+      .box{fill:#172138;stroke:#E8E1D2}
+      .work{fill:#39466B}
+      .tink{fill:#E8E1D2}
+      .bar{fill:#E8E1D2}
+      .soft{fill:#B8B2A2}
+      .meta{fill:#8B8676}
+      .eno{fill:#D9A441}
+      .gold{fill:#D9A441;stroke:#0F1626}
+      .garr{stroke:#D9A441}
+      .coin{stroke:#D9A441}
+      .cointxt{fill:#D9A441}
+      .ahf{fill:#E8E1D2}
+      .gahf{fill:#D9A441}
+    }
+  </style>
+  <defs>
+    <marker id="ah5" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0.8 0.9 L 8.8 5 L 0.8 9.1 Z" class="ahf"/>
+    </marker>
+  </defs>
+  <text x="420" y="24" text-anchor="middle" font-size="9.5" letter-spacing="1.5" class="eno">THE FIRST TEST</text>
+  <text x="420" y="46" text-anchor="middle" font-size="13.5" font-weight="500" class="tink">How strongly does one day predict the next?</text>
+  <text x="420" y="66" text-anchor="middle" font-size="11" class="soft">ρ, the day-to-day correlation, runs 0 to 1: at 0 the days vary freely; at 1 each day repeats the last</text>
+
+  <line x1="250" y1="96" x2="590" y2="96" class="hair"/>
+  <text x="242" y="100" text-anchor="end" font-size="10" class="meta">0</text>
+  <text x="598" y="100" font-size="10" class="meta">1</text>
+
+  <path d="M 248 102 C 234 110, 224 118, 214 128" class="hair" marker-end="url(#ah5)"/>
+  <path d="M 592 102 C 606 110, 616 118, 626 128" class="hair" marker-end="url(#ah5)"/>
+
+  <rect x="52" y="134" width="350" height="66" rx="8" class="box"/>
+  <text x="227" y="153" text-anchor="middle" font-size="12" font-weight="500" class="tink">ρ low · days vary freely</text>
+  <text x="227" y="168" text-anchor="middle" font-size="10.5" class="soft">life supplies comparisons on its own;</text>
+  <text x="227" y="180" text-anchor="middle" font-size="10.5" class="soft">watch first, experiment to confirm</text>
+  <text x="227" y="194" text-anchor="middle" font-size="9" letter-spacing="1.2" class="eno">CENTRE OF GRAVITY: A WATCH ENGINE</text>
+
+  <rect x="438" y="134" width="350" height="66" rx="8" class="box"/>
+  <text x="613" y="153" text-anchor="middle" font-size="12" font-weight="500" class="tink">ρ high · each day repeats the last</text>
+  <text x="613" y="168" text-anchor="middle" font-size="10.5" class="soft">watching is slow and the comparisons come loaded;</text>
+  <text x="613" y="180" text-anchor="middle" font-size="10.5" class="soft">the evidence has to be manufactured</text>
+  <text x="613" y="194" text-anchor="middle" font-size="9" letter-spacing="1.2" class="eno">CENTRE OF GRAVITY: A TEST ENGINE</text>
+
+  <text x="420" y="234" text-anchor="middle" font-size="12" font-weight="500" class="tink">no pass mark; whatever comes back sets what gets built first</text>
+</svg>
