@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1292" viewBox="0 0 1200 1292" font-family="Georgia, 'Times New Roman', serif" role="img" aria-label="Eudaemon, one loop with the user in the middle. Records land in the lakes and teach the deep twin. The user brings a goal to Telos; Telos asks the twin the questions the plan depends on and gets back answers, each with its grade; where the record cannot answer, the experiment engine designs a trial that joins the plan as a step. Telos returns the method and what it would take; the user commits or sets the goal aside; the user runs the plan day by day with its checkpoints built in; tasks the user chooses go to Jarvis; what the user actually did returns to the lakes as new records. The boundary is the rules everything inside obeys, including that any record can be erased forever. The key at the foot decodes the marks.">
+<style>
+.bg{fill:#F1EBDF}.cardf{fill:#EDE6D6;stroke:#D8CFBB;stroke-width:1.4}
+.cardb{fill:#EDE6D6;stroke:#C99B3F;stroke-width:3}
+.cardd{fill:#EDE6D6;stroke:#8B8676;stroke-width:1.4;stroke-dasharray:6 5}
+.ink{fill:#131C2E}.soft{fill:#4A5164}.meta{fill:#6B6450}
+.goldf{fill:#C99B3F}.goldt{fill:#7E6015}.dotn{fill:#F6F1E4}
+.flow{stroke:#131C2E;fill:none;stroke-linecap:round}.flowd{stroke:#4A5164;fill:none;stroke-dasharray:5 5}
+.ring{stroke:#C99B3F;fill:none}.rulec{stroke:#D8CFBB;fill:none}.chipf{fill:#F1EBDF}
+@media(prefers-color-scheme:dark){
+.bg{fill:#10182A}.cardf{fill:#172138;stroke:#2A3550}
+.cardb{fill:#172138;stroke:#D9A441}
+.cardd{fill:#172138;stroke:#8A8F9E}
+.ink{fill:#E8E1D2}.soft{fill:#A9B0C0}.meta{fill:#8A8F9E}
+.goldf{fill:#D9A441}.goldt{fill:#D9A441}.dotn{fill:#10182A}
+.flow{stroke:#E8E1D2}.flowd{stroke:#A9B0C0}
+.rulec{stroke:#2A3550}.chipf{fill:#10182A}}
+</style>
+<defs><marker id="ah" markerWidth="8.5" markerHeight="8.5" refX="7" refY="4.25" orient="auto"><path d="M0,0 L8.5,4.25 L0,8.5 z" fill="context-stroke"/></marker></defs>
+<rect width="1200" height="1292" class="bg"/>
+
+<!-- the loop's shape, and the boundary -->
+<circle cx="600" cy="620" r="310" class="rulec" stroke-width="1.1" stroke-dasharray="2 7"/>
+<circle cx="600" cy="620" r="520" class="rulec" stroke-width="1.7"/>
+<circle cx="600" cy="620" r="513" class="rulec" stroke-width="0.8"/>
+<rect x="355" y="62" width="490" height="76" class="chipf"/>
+<text x="600" y="90" font-size="16" class="ink" text-anchor="middle" letter-spacing="3">THE BOUNDARY</text>
+<text x="600" y="111" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">the rules everything inside obeys</text>
+<text x="600" y="129" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">any record erasable, forever</text>
+
+<!-- title -->
+<text x="40" y="74" font-size="30" class="ink" text-anchor="start" letter-spacing="6">EUDAEMON</text>
+<text x="40" y="102" font-size="14.5" class="soft" text-anchor="start" font-style="italic">one loop, the user in the middle</text>
+<text x="40" y="124" font-size="11.5" class="meta" text-anchor="start">the shape of the system · v0.6 · 02.09.2026</text>
+
+<!-- the user -->
+<circle cx="600" cy="620" r="82" class="ring" stroke-width="2.6"/>
+<circle cx="600" cy="620" r="73" class="ring" stroke-width="1"/>
+<text x="600" y="614" font-size="28" class="ink" text-anchor="middle" font-style="italic">the user</text>
+<text x="600" y="644" font-size="12" class="soft" text-anchor="middle" font-style="italic">the decision is</text>
+<text x="600" y="661" font-size="12" class="soft" text-anchor="middle" font-style="italic">always theirs</text>
+
+<!-- return arc: what happened comes back as records (8) -->
+<path d="M 305.5 716.8 A 310 310 0 0 1 486.9 331.4" class="flow" stroke-width="2.3" marker-end="url(#ah)"/>
+<path d="M 290.6 638.9 A 310 310 0 0 1 290.1 628.1" class="flow" stroke-width="2.3" marker-end="url(#ah)"/>
+<text x="470" y="296" font-size="12.5" class="soft" text-anchor="end" font-style="italic">what the user actually did</text>
+<text x="470" y="314" font-size="12.5" class="soft" text-anchor="end" font-style="italic">returns as new records</text>
+
+<!-- cards -->
+<rect x="490" y="265" width="220" height="90" rx="10" class="cardb"/>
+<text x="600" y="302" font-size="15.5" class="ink" text-anchor="middle" letter-spacing="1.2">THE LAKES</text>
+<text x="600" y="328" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">every record, claimed and kept</text>
+
+<rect x="758.5" y="420" width="220" height="90" rx="10" class="cardf"/>
+<text x="868.5" y="457" font-size="15.5" class="ink" text-anchor="middle" letter-spacing="1.2">THE DEEP TWIN</text>
+<text x="868.5" y="483" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">the evidence of what the user does</text>
+
+<rect x="758.5" y="730" width="220" height="90" rx="10" class="cardf"/>
+<text x="868.5" y="761" font-size="15.5" class="ink" text-anchor="middle" letter-spacing="1.2">TELOS</text>
+<text x="868.5" y="784" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">turns a goal into questions,</text>
+<text x="868.5" y="801" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">and a method fitted to the user</text>
+
+<rect x="490" y="885" width="220" height="90" rx="10" class="cardf"/>
+<text x="600" y="922" font-size="15.5" class="ink" text-anchor="middle" letter-spacing="1.2">THE PLAN</text>
+<text x="600" y="948" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">the user runs it, day by day</text>
+
+<rect x="221.5" y="730" width="220" height="90" rx="10" class="cardd"/>
+<text x="331.5" y="767" font-size="15.5" class="ink" text-anchor="middle" letter-spacing="1.2">JARVIS</text>
+<text x="331.5" y="793" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">the schlep, handed to software</text>
+
+<rect x="221.5" y="420" width="220" height="90" rx="10" class="cardf"/>
+<text x="331.5" y="457" font-size="13.8" class="ink" text-anchor="middle" letter-spacing="0.6">THE EXPERIMENT ENGINE</text>
+<text x="331.5" y="483" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">the only road to a tested cause</text>
+
+<!-- lakes -> twin (1 -> 2) -->
+<path d="M 712.6 331.2 A 310 310 0 0 1 835 417.8" class="flow" stroke-width="2.0" marker-end="url(#ah)"/>
+<text x="800.7" y="333.3" font-size="13" class="soft" text-anchor="middle" font-style="italic">the record teaches it</text>
+
+<!-- twin <-> Telos: answers down the ring, questions up the inside -->
+<path d="M 890.6 511.9 A 310 310 0 0 1 890.9 727" class="flow" stroke-width="2.0" marker-end="url(#ah)"/>
+<text x="922" y="616" font-size="13" class="soft" text-anchor="start" font-style="italic">answers, each</text>
+<text x="922" y="633" font-size="13" class="soft" text-anchor="start" font-style="italic">with its grade</text>
+<path d="M 842 728 L 842 514" class="flowd" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="830" y="616" font-size="12.5" class="soft" text-anchor="end" font-style="italic">the questions the</text>
+<text x="830" y="633" font-size="12.5" class="soft" text-anchor="end" font-style="italic">plan depends on</text>
+
+<!-- twin -> experiment engine: where the record can't answer -->
+<path d="M 756 465 L 445 465" class="flowd" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="600" y="452" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">a question the record can't answer</text>
+
+<!-- experiment engine -> the plan: the trial joins the plan as a step -->
+<path d="M 400 512 C 440 640, 470 780, 500 883" class="flowd" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="418" y="640" font-size="12.5" class="soft" text-anchor="end" font-style="italic">the trial joins</text>
+<text x="418" y="658" font-size="12.5" class="soft" text-anchor="end" font-style="italic">the plan as a step</text>
+
+<!-- user <-> Telos (3, 4) -->
+<path d="M 680.8 654 L 807.3 727" class="flow" stroke-width="2.0" marker-end="url(#ah)"/>
+<text x="716" y="664" font-size="13" class="soft" text-anchor="start" font-style="italic">the user's goal</text>
+<path d="M 767.7 729.5 L 669 672.5" class="flow" stroke-width="2.0" marker-end="url(#ah)"/>
+<text x="632" y="742" font-size="12.5" class="soft" text-anchor="start" font-style="italic">the method,</text>
+<text x="632" y="760" font-size="12.5" class="soft" text-anchor="start" font-style="italic">and what it'd take</text>
+
+<!-- user -> plan (5), or set aside -->
+<path d="M 600 705 L 600 881" class="flow" stroke-width="2.0" marker-end="url(#ah)"/>
+<text x="612" y="832" font-size="13" class="soft" text-anchor="start" font-style="italic">commit</text>
+<path d="M 562 700 C 552 712 541 722 528 731" class="flowd" stroke-width="1.8"/>
+<circle cx="521" cy="737" r="5.5" class="rulec" stroke-width="1.6"/>
+<text x="521" y="762" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">or set aside</text>
+
+<!-- plan -> Jarvis (7) -->
+<path d="M 487.4 908.8 A 310 310 0 0 1 368.9 826.6" class="flowd" stroke-width="2.0" marker-end="url(#ah)"/>
+<text x="335" y="856" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">tasks the user</text>
+<text x="335" y="874" font-size="12.5" class="soft" text-anchor="middle" font-style="italic">chooses to hand over</text>
+
+<!-- the numbered steps -->
+<circle cx="720" cy="256" r="12" class="goldf"/><text x="720" y="260.2" font-size="12.5" class="dotn" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="986" cy="412" r="12" class="goldf"/><text x="986" y="416.2" font-size="12.5" class="dotn" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="696" cy="659" r="12" class="goldf"/><text x="696" y="663.2" font-size="12.5" class="dotn" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="986" cy="828" r="12" class="goldf"/><text x="986" y="832.2" font-size="12.5" class="dotn" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="600" cy="724" r="12" class="goldf"/><text x="600" y="728.2" font-size="12.5" class="dotn" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="718" cy="983" r="12" class="goldf"/><text x="718" y="987.2" font-size="12.5" class="dotn" text-anchor="middle" font-weight="bold">6</text>
+<circle cx="213" cy="722" r="12" class="goldf"/><text x="213" y="726.2" font-size="12.5" class="dotn" text-anchor="middle" font-weight="bold">7</text>
+<circle cx="388.6" cy="393.4" r="12" class="goldf"/><text x="388.6" y="397.6" font-size="12.5" class="dotn" text-anchor="middle" font-weight="bold">8</text>
+
+<!-- the key -->
+<line x1="60" y1="1160" x2="1140" y2="1160" class="rulec" stroke-width="1.1"/>
+<text x="60" y="1184" font-size="11" class="meta" text-anchor="start" letter-spacing="2.5">KEY</text>
+
+<circle cx="72" cy="1213" r="8" class="goldf"/><text x="72" y="1217.2" font-size="9.5" class="dotn" text-anchor="middle" font-weight="bold">1</text>
+<text x="90" y="1217" font-size="12.5" class="soft" text-anchor="start">a step in the story, 1 to 8</text>
+<path d="M 330 1213 L 356 1213" class="flow" stroke-width="2" marker-end="url(#ah)"/>
+<text x="368" y="1217" font-size="12.5" class="soft" text-anchor="start">the flow</text>
+<path d="M 480 1213 L 506 1213" class="flowd" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="518" y="1217" font-size="12.5" class="soft" text-anchor="start">a choice, or a side path</text>
+<path d="M 730 1213 L 756 1213" class="rulec" stroke-width="1.1" stroke-dasharray="2 7"/>
+<text x="768" y="1217" font-size="12.5" class="soft" text-anchor="start">the loop's shape, drawn faint</text>
+
+<rect x="60" y="1240" width="26" height="18" rx="3" class="cardb"/>
+<text x="96" y="1253" font-size="12.5" class="soft" text-anchor="start">built today</text>
+<rect x="330" y="1240" width="26" height="18" rx="3" class="cardf"/>
+<text x="366" y="1253" font-size="12.5" class="soft" text-anchor="start">designed, not yet built</text>
+<rect x="640" y="1240" width="26" height="18" rx="3" class="cardd"/>
+<text x="676" y="1253" font-size="12.5" class="soft" text-anchor="start">deferred: the last thing to be built</text>
+</svg>

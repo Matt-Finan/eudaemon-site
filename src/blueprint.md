@@ -3,120 +3,85 @@ title: The blueprint
 layout: page.njk
 permalink: /blueprint/
 started: 02.08.2026
-updated: 09.08.2026
+updated: 02.09.2026
 summary: The full written plan for Eudaemon, versioned like software; what it's made of, what it assumes, and what still has to be proved.
 ---
 
-*Version 0.5 · 09.08.2026 · First drawn 02.08.2026 and rebuilt after review (the story of how is [entry 01](/log/01-the-blueprint/)). This page changes as the design changes; every change of mind is dated in the log.*
+*Version 0.6 · 02.09.2026 · First drawn 02.08.2026 (the story of how is [entry 01](/log/01-the-blueprint/)) and rebuilt to the v3 architecture after 4 adversarial review rounds. Everything on this page is proposed, not proven. It changes as the design changes, and every change of mind is dated in the log.*
 
-## The system in one paragraph
+Eudaemon turns a person's records into evidence strong enough to act on, and turns the goals that person brings into questions that evidence can answer. Drawn, the whole thing is one loop:
 
-Eudaemon claims every record I can lawfully obtain about myself and holds it as one encrypted archive (the lakes). From the lakes it builds a working model of what I actually do, when, under what conditions and why (the deep twin). When I bring a goal (3), the goal layer (Telos) questions me so as to define the goal as something measurable, researches how such goals are actually reached, then takes each candidate method apart until it understands the method properly: the steps, why each one matters, what each asks of the person attempting it. It compares candidate methods with the twin and works out precisely what I would have to change for that route to work, based on the twin's evidence. What comes back is a method optimised to me, laid out as actions, showing where I'd have to invest money, spend time differently or change habits, with the system's confidence stated on every claim. The decision is mine (5): commit, run a trial, or make the informed decision to set the goal aside. Whatever happens next lands back in the record (8), and the system learns. The tasks that don't need me I can decide to delegate to an agentic arm (Jarvis). Two rules hold everywhere: the system never tells me what to want, and it never sounds more certain than its evidence allows; confidence has to be earned through a staged schedule of proof, starting from an honest "I don't know you yet."
+![Eudaemon: one loop, the user in the middle. Records land in the lakes and teach the deep twin; the user brings a goal to Telos, which asks the twin the questions the plan depends on; where the record can't answer, the experiment engine designs a trial that joins the plan as a step; the user commits or sets the goal aside and runs the plan day by day, handing chosen tasks to Jarvis; what the user actually did returns to the lakes as new records. The key at the foot decodes the marks.](/assets/loop-map-v3.svg)
 
-One more thing the design treats as fundamental: a system that watches and advises a person changes that person. Eudaemon is therefore drawn as a loop that includes me, not a camera pointed at me; it labels everything it caused as its own doing at the moment it's recorded, measures its own footprint on my time and attention, and watches for the quiet failure where it ends up describing someone I've stopped being.
+*The gold numbers on the map turn up again in brackets through the text on this page; read the 2 side by side.*
 
-Drawn, the whole thing is one loop:
+## The lakes (1)
 
-![Eudaemon: eight blocks, one loop, me in the middle](/assets/loop-map-v2.svg)
+Eudaemon claims every record its user can lawfully obtain and holds it as one encrypted archive. Everything arrives as a raw record and stays one. Nothing is edited in place, and each record is sealed under its own key such that, should the need arise, it can later be isolated and erased. Raw records are the only ground truth; everything else the system holds is derived from them and labelled as such. The record keeps 2 clocks, when a thing happened and when the system learnt of it, so hindsight can never masquerade as foresight.
 
-*The gold numbers on the map turn up again in brackets through the text on this page; read the two side by side.*
+## The deep twin (2)
 
-## The eight blocks
+Over the lakes sits the deep twin. Each record is labelled so it can be found; the labels are the system's hypotheses about what may be present in a record, and a hypothesis is not evidence until it has been corroborated. Patterns earn the status of claims slowly, by corroboration and under a careful discipline for what the records are allowed to prove. Thus the twin gradually builds a body of evidence about what the user actually does, when and under what conditions. "Why" is earned via trials, as explained in [entry 02](/log/02-watch-or-try/), run by the experiment engine. Results land in the lakes and the twin holds the cause as a claim at its highest grade.
 
-**The Plant.** The machinery that keeps everything else alive: keys, encrypted storage, backups that are actually restore-tested, monitoring where silence itself raises an alarm, and repair. Its upkeep is budgeted out of my time like any other work, behind a protected floor so maintenance can never be quietly starved by the plans it supports; and if the clever layers ever go down, a plain break-glass view of the essentials remains.
+The twin doesn't impersonate the user. Every claim it holds carries a grade, from read straight off a record at the bottom to tested cause at the top, and is accompanied by error bars and confidence intervals. Watching alone never promotes a correlation to a cause. What the twin hasn't observed sits in an open register of unknowns. Models that predict or draft sit beside the twin, and what they produce is a guess, never evidence. Telos and the twin meet at one narrow point; Telos never reads a raw record.
 
-**The Lakes.** Every record I can lawfully claim (1), landed raw and never altered, then refined: parsed, put on one timeline, linked across sources, graded for quality. Each observation carries its context; which device, which version, what the gaps mean, because missing data is itself information. The record keeps two clocks, when a thing happened and when the system learnt of it, so hindsight can never masquerade as foresight. The original records are kept forever; everything derived from them can be rebuilt.
+The grades, from the bottom up:
 
-**The Deep Twin.** The deep model of me (2): which habits stick, which decay and under what conditions, what has worked on me and what quietly rebounded, how I'm changing and whether that change is drift or a genuine change of mind. Every claim the twin makes is typed, evidenced and calibrated; correlation is not causation; what it hasn't observed sits in an open register of unknowns.
+| grade | what it means | how a claim earns it |
+|---|---|---|
+| fact | read straight off a record | the record says so, and it can be checked against the bytes |
+| pattern | something that has held repeatedly in the record | corroboration, across records and over time |
+| projection | a forecast made from patterns | scored when the future arrives |
+| inference | a like-for-like comparison drawn from days that happened anyway, adjusted for the obvious differences | its known weaknesses travel with it, and it is never called a cause |
+| tested cause | doing X changes Y, for this user | a randomised trial, run by the experiment engine |
 
-**Telos.** The goal layer. It questions the goals I bring to it, defining them into measurable outcomes. It then researches the candidate methods by which people actually reach such goals and studies them: what the steps are, why each step is there, what each demands of the person attempting it, and what those demands rest on in turn. That understanding is what makes the comparison with the twin worth having. A route can be ruled out on evidence, or returned with the precise changes I'd have to make to my life for it to work on me (4). Where a step could be done by software rather than by me, the automated variant becomes a rival version of the method, compared on the same terms over its whole lifetime, upkeep included. (If the automated branch wins, building that agent becomes a task in the plan like any other.) The chosen route is laid out as monthly goals, weekly habits and daily tasks sized for my real days, showing where money, time and habits would have to move, with confidence stated throughout.
+## Telos (3, 4)
 
-**The Experiment Engine.** Where the deep twin can't answer with confidence, a small trial can: properly designed, sized to fit inside a working life, isolated from other trials, and analysed honestly. It also has the duty to deliberately re-test options the system previously set aside, because that is the only way to measure how often the filter is wrong.
+When the user brings a goal (3), the goal layer (Telos) questions them until the goal is something measurable. It then researches how such goals are actually reached and takes each candidate method apart until it understands it: the steps, why each one matters, what each requires of the person attempting it and what those demands rest on in turn. That understanding is what makes the comparison with the twin worth having. Telos compares the candidate methods with the twin, generating the questions the twin can answer, and works out what the user would have to change for a route to work. A route can be ruled out on evidence, or returned (4) with the changes the user would have to make for it to work on them, with the system's confidence stated on every claim.
 
-**Jarvis.** The delegated arm (the name borrowed from Tony Stark's assistant), and deliberately the last thing to be built, because the design treats it as the largest internal risk and it is likely the first bit to be absorbed by platforms. Delegation is optional, always (7): a path I choose task by task, never a default the system assumes. Every action it takes runs under narrow, per-action permissions, with a ladder from propose to confirm to act, and its work is always marked as its own, so the twin never mistakes what my agents did for what I did. It's also aspirationally half the reason the system exists: schlep handed to software is time handed back, and a method that has already been decomposed and matched against the twin should make an unusually good specification for the agent that automates it.
+## The experiment engine
 
-**The Loop.** Daily running (6): dispense today's tasks against today's actual state, check what really happened, tell a bad day from a changed life, replan. It keeps one ledger of everything the system asks of me; and it keeps a gauge on its own vitality, including the plainest one, whether its plans still lead to decisions, so it can raise its hand and renegotiate itself before it becomes furniture.
+The experiment engine is not a separate destination the user visits. It is what Telos reaches for when the record alone cannot carry the plan. Telos decomposes a goal into questions; each question goes to the twin; the twin answers at whatever grade the record supports. When a question the plan depends on comes back at a grade too low to act on, and the stakes of the step require a cause, the answer carries with it the trial that would settle the question, along with how long it would take and what it would ask of the user. That trial then appears in the plan as a step, beside the habits and tasks, and the user chooses whether to run it. Its result lands in the lakes as records, and the twin's claim rises to a tested cause. Telos then revises the plan on the stronger evidence.
 
-**The Boundary.** The guarantees every block obeys. Nothing leaves my control without passing an egress policy, and a ledger records anything that ever does. Anything the system reads is treated as data, never as instructions; words in an email can't become commands. One shared language of confidence and unknowns. Everything auditable years later. Consent and forgetting honoured all the way down, other people's data in my record treated with more care than my own, and a plan for incapacity that doesn't undo the security. The staged trust schedule lives here too: what the system may sound confident about is a function of what it has proved.
+One ruling is open. The twin may one day propose a trial of its own, where it finds a gap worth closing and no goal is on the table; that is the system steering a life unasked, and it hasn't been decided. Nor has the larger question, how far the whole design leans on watching and how far on trials. The first ranked test measures the number that decides it, and [entry 02](/log/02-watch-or-try/) sets that out.
 
-## The fifty-two testable pieces
+## The plan (5, 6), and Jarvis (7)
 
-Everything above stands on these. Each is written so it can be proved wrong; the tests, with pass and fail marks set in advance, will be written out in entry 02 of the log. Pieces 1 to 19 are the originals from entry 00, sharpened; 20 to 39 were added or forced by the first review; piece 40 split five ways, and 42 to 52 arrived when a second, nine-review audit attacked the full list for what it was missing.
+The user then decides (5): commit to the plan, which carries its own checkpoints, or set the goal aside. A plan is a hypothesis about the user, written down before it runs. Telos expects the method to work, and it says in advance what evidence by when would add to or subtract from its confidence.
 
-1. My record can generate better questions about me than a skilled interviewer could ask without it.
-2. The direction and speed at which I'm changing can be estimated from the record, and used in planning.
-3. There are real, findable patterns in the things about me I can change, not only in fixed traits.
-4. Each genuinely different kind of data adds analytical power, rather than the value running out after the first few sources.
-5. What I value can be evidenced from the record well enough to shape plans.
-6. Whether a goal is achievable for me specifically can be estimated with stated confidence, never as a bare yes or no.
-7. What would have to change can be expressed as observable actions, not personality judgements.
-8. Showing the reasoning chain from a small task to the goal changes whether I actually do the task.
-9. An out-of-reach goal can be returned as what it would take rather than a refusal.
-10. A long personal record narrows, though never closes, the gap between what I say I want and what I actually want.
-11. A goal can be broken down, within a bounded set of methods, into actions executable tomorrow, without my judgement at every branch, and each action performable from the task text alone.
-12. The probability that I sustain a given task is estimable from my record; directly for tasks like ones I've tried, more cautiously for novel ones.
-13. That estimate can filter options without systematically discarding things I would in fact have done.
-14. Where a step of a method could be automated, the automated variant can be weighed against the original as a rival method, on feasibility; and when it wins, building the agent becomes a task in the plan.
-15. Plans built this way are better calibrated than my own unaided forecasts, and the personalisation pays over a strong generic plan.
-16. The system can tell which questions the record can answer and which need a real-world trial, triggered by what a wrong decision costs against what the trial costs.
-17. Trials can be made small enough to run inside a working life, and their results compound.
-18. Decomposition plus a deep model of me yields a tighter specification for an automation agent than could be written without it.
-19. An agent's operating rules mostly follow from the decomposition, though they must still be authored and checked, never assumed free.
-20. Being observed and advised changes me, and that change can be detected and corrected for.
-21. Deliberately re-testing set-aside options can measure how often the filter is wrong.
-22. What works for people in general can be translated to me specifically at a knowable rate.
-23. The meaning of my data stays stable enough, across sources and across years, to analyse as one record.
-24. Cause and effect can be identified in a single life, from natural variation plus designed trials, within practical time.
-25. Splitting a method into daily pieces, or delegating parts of it, preserves the reason the method works.
-26. Goals, trials and agents running at once interfere weakly enough that it's still possible to tell what caused what.
-27. What I can do, what my agents can do, and what we can do together are separable in the record.
-28. The system's demands and outputs stay within what I can actually absorb and act on, for years.
-29. A genuine change in what I want is distinguishable from a bad month.
-30. The system can be maintained out of my own time without consuming the plans it exists to serve.
-31. Gaps in the record that are themselves meaningful can be recognised as such.
-32. I can live with an honest model of myself without turning away from it.
-33. My corrections make the record more accurate, not more flattering.
-34. Personal-grade research and analysis can be done without personal data leaving my control.
-35. Years of being shown what goals would take don't quietly reshape which goals I dare to bring; or if they do, the reshaping is detectable.
-36. When a measure and the goal it stands for drift apart, the drift is visible before it costs me.
-37. Accuracy proven on small, frequent goals transfers to large, rare ones.
-38. Performing for the system, rather than living, is detectable.
-39. What a method demands and what I can supply can be written in one shared vocabulary precise enough to match them.
-40. The world's knowledge about how goals are reached is deep enough to be used, which is really five claims:
-    a. for the goals I'll actually bring, weighted by how much they matter, published knowledge is mechanism-deep; where it isn't, the system says so;
-    b. what exists can be found and extracted faithfully: the same method described two ways yields the same demands, rival explanations survive as rivals, and "not found" is never passed off as "doesn't exist";
-    c. the reasons recovered are true often enough that judging methods by their whys beats judging them by outcomes alone;
-    d. the how-and-why digging bottoms out in checkable facts about a person, repeatably, or returns an honest "mechanism unknown";
-    e. the twin's own why-answers are earned from trials; patterns merely observed are labelled correlation, never dressed as cause.
-41. What an agent would cost to build and to keep alive can be estimated, before building it, well enough to weigh an automated route against a manual one.
-42. I keep showing up: engagement survives the novelty wearing off, stressful months and slow patches, and the system can tell if I'm quietly drifting away.
-43. The whole system, after everything it costs me in time, money and attention, beats the best simple alternative; and if it doesn't, it can be honourably retired.
-44. Where a method secretly depends on skill that never made it into writing, that dependence is caught and named before the method is recommended or automated.
-45. Priced over their whole lives rather than their builds, automated routes win often enough to justify automation being half the mission.
-46. A wrong belief that hides its own disproof, by never scheduling what it predicts will fail, can be caught with deliberate try-it-anyway probes.
-47. Small trials on my life are internally valid: effects that linger, imperfect compliance and my own expectations are handled by design, or the trial is refused.
-48. Confidence in a whole plan stays honest even when its parts lean on the same possibly-wrong sources.
-49. My yes or no on an agent's proposals stays a real check rather than a habit, for years, and the system can tell the difference.
-50. I can still run my own life without the system, at intervals, to a standard set in advance; if I can't, it delegates less.
-51. Acting on patterns merely observed, rather than tested, still leaves me better off than ignoring them, by a margin worth having.
-52. Money, time, energy and headspace can be traded against each other consistently enough that the best method today is still the best method next month.
+The user runs the plan (6). What happened is checked against those checkpoints, and the plan is revised. How a plan is presented, and what running one looks like day to day, is not yet decided.
 
-## The hardest problems
+Jarvis is the agent layer for the tasks the user chooses to hand over (7); a plan can be run end to end without it. It sits on the loop because even the diary that dispenses the day's tasks is Jarvis in embryo, and it is drawn dashed because it is the last thing to be built: the design treats it as the largest internal risk and the part most likely to be absorbed by platforms. Delegation is a choice, task by task. Every action Jarvis takes runs under narrow permissions, one action at a time, with a ladder from propose to confirm to act, and its work is marked as its own so the twin can tell what an agent did from what the user did.
 
-Four of the fifty-two carry the most weight, and anyone who enjoys hard problems is welcome to argue with me about them ([hello@eudaemon.uk](mailto:hello@eudaemon.uk)). Piece 40c: much of what's published about why methods work fails replication, and ordinary calibration can't police mechanism claims because they rarely get settled; both independent audit rounds ranked this the gravest open question. Piece 13: published attempts to predict what people will stick to barely beat a coin toss, and the filter's mistakes are invisible unless deliberately hunted (21). Piece 20: the system changes the person it's learning, so yesterday's patterns describe someone slightly different from today's user; every longitudinal claim inherits this. Piece 28: the design can be right and still fail if it costs more attention than it returns; reviewers across both rounds, working separately, described that exact quiet death.
+2 rules hold everywhere: the system never tells the user what to want, and it never sounds more certain than its evidence allows; confidence has to be earned, starting from an honest "I don't know you yet."
+
+## Back to the lakes (8), and the boundary
+
+Whatever the user actually did returns to the lakes as new records (8), and the system learns. A system that watches and advises a person changes that person, so Eudaemon is drawn as a loop that includes the user, not a camera pointed at them. It labels everything it caused as its own doing at the moment it's recorded, measures its own footprint on the user's time and attention and watches for the quiet failure where it ends up describing someone the user has stopped being.
+
+The boundary is the set of rules everything inside obeys. Nothing leaves the user's control without passing an egress policy, and a ledger records anything that ever does. Anything the system reads is treated as data, never as instructions; words in an email can't become commands. One shared language of confidence and unknowns, and everything auditable years later. Any record can be erased forever by destroying its key. Deletion reaches every derived store, every index and every model that trained on it, and it says what had already left: a sent message can't be unsent, and the system won't imply a right it can't enforce.
+
+## What it refuses to answer
+
+Some questions no amount of data or budget reaches, and the design names the refusal instead of guessing. Why a single past decision went the way it did, when nothing was randomised. What the user felt, beyond what they reported. Whether a change came from the system's advice or from the user's own trajectory. Anything about a span with no raw bytes. Anything about another person's mind at a high grade. Other refusals are commitments: it never diagnoses, monitors, treats or prevents anything, and it never advises on specific financial products. It helps decide, shows what a route would take and says how it might be wrong.
+
+## The 62 ranked tests
+
+Eudaemon is a system for a person, and I'm the first, because mine is the record I can lawfully obtain. Everything above rests on assumptions, and every one of them is now a test whose result could change what I do, ranked by how far. The count has moved as the design has: 19 at the first pass, 39 after the first review round, 41 and then 52 after the second, 62 once every assumption in the consolidated design became a ranked test. The full register stays in the project files. The 3 it ranks highest are all questions about time. How strongly does each channel of a record predict its own next day, and so how many independent days is a year of it worth? Do the relationships worth learning about a person stay true for longer than they take to learn? Can a deliberately randomised habit supply several honest comparisons a day, so that a question settles in weeks where watching alone would take years? The first is running now; [entry 02](/log/02-watch-or-try/) is that test.
 
 ## Design commitments
 
-A method and what it would take, never a verdict; the decision stays with me. Requirements in performable terms, never personality terms. Confidence earned through the trust schedule, never assumed. The distinction between no evidence and negative evidence enforced everywhere. Trials rationed by stakes against cost. Set-aside options re-tested on schedule. One ledger for my attention. Agents' work never mistaken for mine; delegation a choice, never a default. Anything the system reads treated as data, never as instructions. Everything the system itself causes labelled as its own at the moment of recording. Two clocks on every fact: when it happened, when it was learnt. Automated routes priced for their whole lives, not their builds. The system itself judged as a method, retirement test included. A vitality gauge on the whole mission. Nothing from the records, source or derived, on this site.
+A method and what it would take, never a verdict; the decision stays with the user. Requirements in performable terms, never personality terms. Raw records the only ground truth; a model's guess never becomes evidence. Confidence earned, never assumed, and every answer saying how it might be wrong. The distinction between no evidence and negative evidence enforced everywhere. Causal language earned only by a randomised trial. Trials rationed by stakes against cost. One ledger for the user's attention. Agents' work never mistaken for the user's; delegation a choice, never a default. Anything the system reads treated as data, never as instructions. Everything the system itself causes labelled as its own at the moment of recording. 2 clocks on every fact: when it happened, when it was learnt. Any record erasable forever, and honest about what deletion can't reach. Automated routes priced for their whole lives, never their builds alone. The system itself judged as a method, retirement test included. Nothing from the records, source or derived, on this site.
 
 ## What's not published, and why
 
-The engineering-level detail (the full parts list, the security design, the agent-containment specifics) stays private until the relevant parts are built; publishing a threat model before the defences exist would be poor security practice, and saying so plainly seems better than pretending the document doesn't exist. The review transcripts stay in the project files, kept word for word. Everything that changes on this page is dated, and the log records why.
+The engineering detail (the full parts list, the security design, the specifics of agent containment, the machinery inside the twin, the point where Telos and the twin meet) stays private until the relevant parts are built; publishing a threat model before the defences exist would be poor security practice, and saying so plainly seems better than pretending the document doesn't exist. The test register is published as a count and its top 3; the list itself stays in the project files. The review transcripts stay in the project files, kept word for word. Everything that changes on this page is dated, and the log records why.
 
 ## Version history
 
-- **v0.1 · 01.08.2026:** first full drawing; eight blocks, ~100 parts, 103 assumptions, 19 testable pieces.
+- **v0.1 · 01.08.2026:** first full drawing; 8 blocks, ~100 parts, 103 assumptions, 19 testable pieces.
 - **v0.2 · 01.08.2026:** corrections from first reading; the archive/analysis split, method research as its own step, the plan as the decision artefact.
-- **v0.3 · 02.08.2026:** rebuilt after the eight-review attack; 28 parts added, the loop redrawn to include me, the trust schedule added, testable pieces 19 → 39, assumptions 103 → 138.
+- **v0.3 · 02.08.2026:** rebuilt after the 8-review attack; 28 parts added, the loop redrawn to include me, the trust schedule added, testable pieces 19 → 39, assumptions 103 → 138.
 - **v0.4 · 09.08.2026:** the goal layer rethought; Telos studies candidate methods from the inside before comparing them with the twin, the output reframed from a price to a method fitted to the person, automation weighed inside Telos as rival versions of a method, the twin asked to reach why as well as what, testable pieces 39 → 41.
-- **v0.5 · 09.08.2026:** the register audit; nine independent reviews attacked the full list of beliefs for what it was missing. Testable pieces 41 → 52, the knowledge claim split five ways; the private assumption register grew to 164 entries with eight retired as duplicates. Three build-first commitments added: data never instructions, the system's own doings labelled at the moment of capture, two clocks on every fact. Automation repriced over its whole lifetime, and never compulsory. The loop map moved onto this page.
+- **v0.5 · 09.08.2026:** the register audit; 9 independent reviews attacked the full list of beliefs for what it was missing. Testable pieces 41 → 52, the knowledge claim split 5 ways; the private assumption register grew to 164 entries with 8 retired as duplicates. 3 build-first commitments added: data never instructions, the system's own doings labelled at the moment of capture, 2 clocks on every fact. Automation repriced over its whole lifetime, and never compulsory. The loop map moved onto this page.
+- **v0.6 · 02.09.2026:** rebuilt to the v3 architecture after 2 further review rounds (a blind clean room round and a round with resources assumed unlimited). The page turned to face the user, with the author as the first of them. The deep twin restated as a body of evidence, where v0.5 had it as a working model of me, with a grade on every claim and why earned only by trial; the grades tabled. The experiment engine drawn where it is invoked, from a question the record can't answer, and its trials made steps in the plan. Commit and trial collapsed into one decision, because every plan carries its own checkpoints. The plan's day to day left open. The forget path and the refusals written down. The Plant folded into what's not published. The 52 pieces replaced by the 62 ranked tests, published as a count and its top 3. The loop map redrawn to match, with a key.

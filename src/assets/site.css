@@ -97,6 +97,7 @@ nav.site a.nav-rss { margin-left: auto; margin-right: 0; }
 .mission { margin: 2.3rem 0 0.4rem; font-size: 1.4rem; line-height: 1.45; font-weight: 500; max-width: 36rem; }
 .mission .q { font-style: italic; }
 .submission { color: var(--fg-soft); max-width: 36rem; margin-top: 0.8rem; }
+.submission a { color: var(--link); }
 .status-line { margin: 1.8rem 0 0; font-size: 0.85rem; color: var(--meta); letter-spacing: 0.04em; }
 .status-line b { color: var(--fg); font-weight: 600; }
 

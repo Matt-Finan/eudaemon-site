@@ -19,7 +19,7 @@
     @media (prefers-color-scheme: dark){
       .ink,.hair,.dash{stroke:#E8E1D2}
       .box{fill:#172138;stroke:#E8E1D2}
-      .work{fill:#39466B}
+      .work{fill:#283352}
       .tink{fill:#E8E1D2}
       .bar{fill:#E8E1D2}
       .soft{fill:#B8B2A2}
