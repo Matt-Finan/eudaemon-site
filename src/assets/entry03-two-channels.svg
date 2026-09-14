@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 358" font-family="Newsreader, Georgia, 'Times New Roman', serif" role="img" aria-label="Two variables on one time-of-day axis, running down the page: coffee cups placed by the time each was drunk, high in the afternoon, with their own average; beneath them the nights as bars from the bedtime down, with their average. On the nights the coffee sits later than its average, the bedtime sits later than its own. Yesterday and today carry brackets c1, c2 for the coffee and b1, b2 for the bedtime. Tomorrow's coffee is planned late, c3, drawn faint, and tomorrow's bedtime is a dashed bar whose bracket is labelled b3 = beta times c3. Beside the graph, the panel what moves what: coffee and sleep joined by a two-way arrow marked with a question, and a third thing above pointing at both; caption, they move together; which moves which, and is something else moving both?">
+  <style>
+    .ink{stroke:#131C2E;fill:none;stroke-width:1.6}
+    .hair{stroke:#131C2E;fill:none;stroke-width:1.2}
+    .dash{stroke:#131C2E;fill:none;stroke-width:1.2;stroke-dasharray:3 4}
+    .box{fill:#EDE6D6;stroke:#131C2E;stroke-width:1.5}
+    .work{fill:#D5CAAE;stroke:none}
+    .tink{fill:#131C2E;stroke:none}
+    .bar{fill:#131C2E;stroke:none}
+    .soft{fill:#4A5164;stroke:none}
+    .meta{fill:#6B6450;stroke:none}
+    .eno{fill:#7E6015;stroke:none}
+    .gold{fill:#C99B3F;stroke:#131C2E;stroke-width:0.9}
+    .garr{stroke:#C99B3F;fill:none;stroke-width:2}
+    .coin{stroke:#7E6015;fill:none;stroke-width:1.6}
+    .cointxt{fill:#7E6015;stroke:none}
+    .ahf{fill:#131C2E;stroke:none}
+    .gahf{fill:#C99B3F;stroke:none}
+    .ribbon{fill:#131C2E;fill-opacity:0.13;stroke:none}
+    .gdot{fill:#C99B3F;stroke:#131C2E;stroke-width:1.2}
+    @media (prefers-color-scheme: dark){
+      .ink,.hair,.dash{stroke:#E8E1D2}
+      .box{fill:#172138;stroke:#E8E1D2}
+      .work{fill:#283352}
+      .tink{fill:#E8E1D2}
+      .bar{fill:#E8E1D2}
+      .soft{fill:#B8B2A2}
+      .meta{fill:#8B8676}
+      .eno{fill:#D9A441}
+      .gold{fill:#D9A441;stroke:#0F1626}
+      .garr{stroke:#D9A441}
+      .coin{stroke:#D9A441}
+      .cointxt{fill:#D9A441}
+      .ahf{fill:#E8E1D2}
+      .gahf{fill:#D9A441}
+      .ribbon{fill:#E8E1D2;fill-opacity:0.16}
+      .gdot{fill:#D9A441;stroke:#0F1626}
+    }
+  </style>
+  <defs>
+    <g id="cup">
+      <rect x="-7" y="-4.5" width="13" height="9" rx="2" class="gold"/>
+      <path d="M 6.5 -2 a 3 3 0 1 1 0 5" class="coin"/>
+    </g>
+    <marker id="ah7" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0.8 0.9 L 8.8 5 L 0.8 9.1 Z" class="ahf"/>
+    </marker>
+  </defs>
+  <text x="420" y="24" text-anchor="middle" font-size="9.5" class="eno" letter-spacing="1.5">TWO VARIABLES</text>
+  <text x="420" y="45" text-anchor="middle" font-size="13.5" class="tink" font-weight="500">Do the 2 distances from their averages go together?</text>
+  <text x="88" y="68" text-anchor="end" font-size="10" class="soft">time of day</text>
+  <line x1="96" y1="64" x2="96" y2="300.0" class="hair" marker-end="url(#ah7)"/>
+  <line x1="96" y1="294.5" x2="596" y2="294.5" class="hair"/>
+  <line x1="92" y1="94.0" x2="96" y2="94.0" class="hair"/>
+  <text x="86" y="97.5" text-anchor="end" font-size="9" class="meta">16:00</text>
+  <line x1="92" y1="174.0" x2="96" y2="174.0" class="hair"/>
+  <text x="86" y="177.5" text-anchor="end" font-size="9" class="meta">20:00</text>
+  <line x1="92" y1="254.0" x2="96" y2="254.0" class="hair"/>
+  <text x="86" y="257.5" text-anchor="end" font-size="9" class="meta">00:00</text>
+  <text x="380" y="309.0" text-anchor="middle" font-size="9.5" class="meta">yesterday</text>
+  <text x="446" y="309.0" text-anchor="middle" font-size="9.5" class="meta">today</text>
+  <text x="512" y="309.0" text-anchor="middle" font-size="9.5" class="meta">tomorrow</text>
+  <line x1="100" y1="112.8" x2="596" y2="112.8" class="dash"/>
+  <text x="600" y="108.33333333333333" font-size="9" class="meta">average coffee</text>
+  <use href="#cup" x="116" y="89.0"/>
+  <use href="#cup" x="182" y="84.0"/>
+  <use href="#cup" x="248" y="109.0"/>
+  <use href="#cup" x="314" y="124.0"/>
+  <use href="#cup" x="380" y="129.0"/>
+  <use href="#cup" x="446" y="139.0"/>
+  <path d="M 394 112.3 L 402 112.3 M 398 112.3 L 398 129.0 M 394 129.0 L 402 129.0" class="hair"/>
+  <text x="406" y="132.5" font-size="10" class="tink">c₁</text>
+  <path d="M 460 112.3 L 468 112.3 M 464 112.3 L 464 139.0 M 460 139.0 L 468 139.0" class="hair"/>
+  <text x="472" y="142.5" font-size="10" class="tink">c₂</text>
+  <g opacity="0.55"><use href="#cup" x="512" y="134.0"/></g>
+  <path d="M 526 112.3 L 534 112.3 M 530 112.3 L 530 134.0 M 526 134.0 L 534 134.0" class="hair"/>
+  <text x="538" y="137.5" font-size="10" class="tink">c₃</text>
+  <g class="bar">
+    <rect x="103.0" y="222.3" width="26" height="71.7" rx="2"/>
+    <rect x="169.0" y="219.0" width="26" height="75.0" rx="2"/>
+    <rect x="235.0" y="235.7" width="26" height="58.3" rx="2"/>
+    <rect x="301.0" y="249.0" width="26" height="45.0" rx="2"/>
+    <rect x="367.0" y="247.3" width="26" height="46.7" rx="2"/>
+    <rect x="433.0" y="255.7" width="26" height="38.3" rx="2"/>
+  </g>
+  <rect x="499.0" y="252.7" width="26" height="41.3" rx="2" class="dash"/>
+  <line x1="100" y1="238.7" x2="596" y2="238.7" class="dash"/>
+  <text x="600" y="234.16666666666666" font-size="9" class="meta">average bedtime</text>
+  <path d="M 397.0 238.2 L 405.0 238.2 M 401.0 238.2 L 401.0 247.3 M 397.0 247.3 L 405.0 247.3" class="hair"/>
+  <text x="409.0" y="250.83333333333337" font-size="10" class="tink">b₁</text>
+  <path d="M 463.0 238.2 L 471.0 238.2 M 467.0 238.2 L 467.0 255.7 M 463.0 255.7 L 471.0 255.7" class="hair"/>
+  <text x="475.0" y="259.16666666666663" font-size="10" class="tink">b₂</text>
+  <path d="M 529.0 238.2 L 537.0 238.2 M 533.0 238.2 L 533.0 252.7 M 529.0 252.7 L 537.0 252.7" class="hair"/>
+  <text x="541.0" y="256.18333333333334" font-size="10" class="tink">b₃ = β × c₃</text>
+  <line x1="676" y1="64" x2="676" y2="300.0" class="hair" opacity="0.5"/>
+  <text x="758.0" y="68" text-anchor="middle" font-size="8.5" class="eno" letter-spacing="1.2">WHAT MOVES WHAT</text>
+  <circle cx="746" cy="190.0" r="16" class="box"/>
+  <text x="746" y="193.5" text-anchor="middle" font-size="9" class="tink">coffee</text>
+  <circle cx="810" cy="190.0" r="16" class="box"/>
+  <text x="810" y="193.5" text-anchor="middle" font-size="9" class="tink">sleep</text>
+  <circle cx="778" cy="140.0" r="13" class="box"/>
+  <text x="778" y="143.5" text-anchor="middle" font-size="9" class="tink">?</text>
+  <line x1="770" y1="150.0" x2="756" y2="177.0" class="hair" marker-end="url(#ah7)"/>
+  <line x1="786" y1="150.0" x2="800" y2="177.0" class="hair" marker-end="url(#ah7)"/>
+  <line x1="765" y1="190.0" x2="791" y2="190.0" class="hair" marker-start="url(#ah7)" marker-end="url(#ah7)"/>
+  <text x="778" y="185.0" text-anchor="middle" font-size="10" class="tink" font-weight="500">?</text>
+  <text x="758.0" y="224.0" text-anchor="middle" font-size="9" class="meta">they move together;</text>
+  <text x="758.0" y="237.0" text-anchor="middle" font-size="9" class="meta">which moves which, and is</text>
+  <text x="758.0" y="250.0" text-anchor="middle" font-size="9" class="meta">something else moving both?</text>
+  <use href="#cup" x="111" y="338"/>
+  <text x="124" y="342" font-size="10" class="soft">coffee, by time</text>
+  <rect x="208.5" y="330" width="8" height="14" rx="1.5" class="bar"/>
+  <text x="224.5" y="342" font-size="10" class="soft">the night, from bedtime</text>
+  <line x1="346.6" y1="338" x2="372.6" y2="338" class="dash"/>
+  <text x="378.6" y="342" font-size="10" class="soft">the average of each</text>
+  <path d="M 481.90000000000003 330.0 L 489.90000000000003 330.0 M 485.90000000000003 330.0 L 485.90000000000003 343.0 M 481.90000000000003 343.0 L 489.90000000000003 343.0" class="hair"/>
+  <text x="495.90000000000003" y="342" font-size="10" class="soft">b, c: minutes from the average</text>
+  <rect x="650.9000000000001" y="330" width="8" height="14" rx="1.5" class="dash"/>
+  <text x="666.9000000000001" y="342" font-size="10" class="soft">tomorrow</text>
+
+</svg>
