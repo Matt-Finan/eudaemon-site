@@ -3,11 +3,11 @@ title: The blueprint
 layout: page.njk
 permalink: /blueprint/
 started: 02.08.2026
-updated: 02.09.2026
+updated: 26.09.2026
 summary: The full written plan for Eudaemon, versioned like software; what it's made of, what it assumes, and what still has to be proved.
 ---
 
-*Version 0.6 · 02.09.2026 · First drawn 02.08.2026 (the story of how is [entry 01](/log/01-the-blueprint/)) and rebuilt to the v3 architecture after 4 adversarial review rounds. Everything on this page is proposed, not proven. It changes as the design changes, and every change of mind is dated in the log.*
+*Version 0.6.1 · 26.09.2026 · First drawn 02.08.2026 (the story of how is [entry 01](/log/01-the-blueprint/)) and rebuilt to the v3 architecture after 4 adversarial review rounds. Everything on this page is proposed, not proven. It changes as the design changes, and every change of mind is dated in the log.*
 
 Eudaemon turns a person's records into evidence strong enough to act on, and turns the goals that person brings into questions that evidence can answer. Drawn, the whole thing is one loop:
 
@@ -43,7 +43,7 @@ When the user brings a goal (3), the goal layer (Telos) questions them until the
 
 The experiment engine is not a separate destination the user visits. It is what Telos reaches for when the record alone cannot carry the plan. Telos decomposes a goal into questions; each question goes to the twin; the twin answers at whatever grade the record supports. When a question the plan depends on comes back at a grade too low to act on, and the stakes of the step require a cause, the answer carries with it the trial that would settle the question, along with how long it would take and what it would ask of the user. That trial then appears in the plan as a step, beside the habits and tasks, and the user chooses whether to run it. Its result lands in the lakes as records, and the twin's claim rises to a tested cause. Telos then revises the plan on the stronger evidence.
 
-One ruling is open. The twin may one day propose a trial of its own, where it finds a gap worth closing and no goal is on the table; that is the system steering a life unasked, and it hasn't been decided. Nor has the larger question, how far the whole design leans on watching and how far on trials. The first ranked test measures the number that decides it, and [entry 02](/log/02-watch-or-try/) sets that out.
+One ruling is open. The twin may one day propose a trial of its own, where it finds a gap worth closing and no goal is on the table; that is the system steering a life unasked, and it hasn't been decided. Nor has the larger question, how far the whole design leans on watching and how far on trials. It turns on what a cause costs in days, set against what it's worth to the user. [Entry 02](/log/02-watch-or-try/) and [entry 04](/log/04-how-fast-can-a-trial-reach-an-answer/) set out the first parts of that cost, and [entry 03](/log/03-the-moving-target/) the clock it has to beat; separate tests will measure the worth.
 
 ## The plan (5, 6), and Jarvis (7)
 
