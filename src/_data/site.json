@@ -4,7 +4,7 @@
   "author": "Matt Finan",
   "contact": "hello@eudaemon.uk",
   "description": "One person finding out whether the data trail of a life can help its owner make properly informed decisions.",
-  "now": "Entry 02 is live. The assumptions are now ranked tests, and the first measures how strongly one day predicts the next, source by source; its answer decides whether Eudaemon reads records or runs experiments.",
-  "nowUpdated": "30.08.2026",
+  "now": "Entry 04 is live: how fast a trial can reach an answer.",
+  "nowUpdated": "26.09.2026",
   "repo": "https://github.com/Matt-Finan/eudaemon-site"
 }
