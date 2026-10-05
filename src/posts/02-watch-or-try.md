@@ -41,7 +41,11 @@ So the test computes ρ across every source in the archive: one number per chann
 
 ![The rho scale, and the fork it sets between a watch engine and a test engine](/assets/entry02-rho-fork.svg)
 
-There's no pass mark, and this test can't fail. Whatever comes back sets the centre of gravity of what gets built first. Low, and Eudaemon leans watch engine, a careful reader of the records already held, with experiments kept for confirmation. High, and reading harder is a dead end; the effort goes into the machinery that makes tomorrow deliberately unlike today, ::: revised 05.10.2026 ρ doesn't set this on its own. It prices watching; a trial has a price of its own, and how far Eudaemon leans on trials turns on what a cause costs in days against what it's worth to the user. [Entry 05](/log/05-what-is-the-cost-of-beta/) sets out that price as one equation; separate tests will measure the worth. :::
+There's no pass mark, and this test can't fail. Whatever comes back sets the centre of gravity of what gets built first. Low, and Eudaemon leans watch engine, a careful reader of the records already held, with experiments kept for confirmation. High, and reading harder is a dead end; the effort goes into the machinery that makes tomorrow deliberately unlike today, and Eudaemon leans test engine.
+
+::: revised 05.10.2026
+ρ doesn't set this on its own. It prices watching; a trial has a price of its own, and how far Eudaemon leans on trials turns on what a cause costs in days against what it's worth to the user. [Entry 05](/log/05-what-is-the-cost-of-beta/) sets out that price as one equation; separate tests will measure the worth.
+:::
 
 ---
 
