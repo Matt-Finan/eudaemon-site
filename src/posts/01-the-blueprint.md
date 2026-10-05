@@ -3,7 +3,7 @@ title: The blueprint
 date: 2026-08-02
 series: 1
 status: entry
-revisions: 1 (31.08.2026)
+revisions: 2 (31.08.2026, 05.10.2026)
 summary: No code yet, on purpose. The idea was broken into parts, attacked by 8 independent AI reviewers and rebuilt into a blueprint worth testing.
 ---
 
@@ -31,6 +31,10 @@ So the week's output is the blueprint, version 3, where every part can be traced
 
 ::: revised 31.08.2026
 39 became 52 after a second review round, and 62 once the consolidated design turned every remaining assumption into a ranked test. The blueprint still shows the 52 of v0.5 until it is rewritten.
+:::
+
+::: revised 05.10.2026
+[The blueprint](/blueprint/) has shown the 62 since v0.6, 02.09.2026.
 :::
 
 Coming next. Entry 02: the tests. Each one gets its pass mark and its fail mark written down before it runs, so I can't move the goalposts afterwards.
