@@ -21,7 +21,7 @@ A comparison is clean when the effect of one toss has faded before the coin is t
 
 ![One walk: a coin at 09:00 comes up heads, a walk (tails would have been a rest); the lift in alertness rises within minutes, fades, and is back at the ground state by 10:30; a reading 20 minutes after the walk catches the lift near its height; a bracket under the time axis marks the settle time, from the walk to the lift's return to the ground state; timings illustrative](/assets/entry04-one-walk.svg)
 
-Alertness here is read by a reaction time test.
+*Alertness here is read by a reaction time test.*
 
 The coin can only test effects that fade. The "settle time" is how long an effect takes to fade back to the ground state. Coins tossed safely will be tossed a "settle time" apart, each reading only seeing the effect of its own toss. A reading taken before the effects of the previous coin toss have settled carries the effects left over from the last toss; the comparison isn't so clean. Further apart, the comparison is clean, but time is wasted, time where another toss could have been slipped in: f is lower than it needs to be.
 
@@ -29,7 +29,7 @@ The coin can only test effects that fade. The "settle time" is how long an effec
 
 ![Two tosses in a row, 45 minutes apart, half the settle time, in the 4 orders the coin deals, heads a walk and tails a rest, each with the reading 20 minutes after the second toss: rest then rest, nothing to fade, the ground state; walk then rest, what is left of the first walk, on its own; rest then walk, a fresh lift, on its own; walk then walk, the fresh lift on top of what is left; if walks add up, the fourth reads as the second and third together; timings illustrative](/assets/entry04-two-tosses.svg)
 
-The same walk, with coin tosses half a settle time apart.
+*The same walk, with coin tosses half a settle time apart.*
 
 Tossing coins closer than the settle time, thus risking a less clean comparison, is not necessarily a waste. The order of 2 tosses (rest rest, walk rest, rest walk, walk walk) is random, as the diagram shows. Whenever the first toss is a rest, the reading after the second is clean whatever happens, and the other 2 orders show whether an intervention's effects stack. If they add up (in this example, the alertness gained by going for a walk before the increase in alertness gained from the last walk has settled), every toss counts as a clean comparison. If they don't, tossing faster buys nothing and costs the user more interventions, each one interrupting the day without contributing a clean comparison; no gain in terms of f.
 
@@ -52,7 +52,5 @@ T is now written T<sub>β</sub>, the days to β, and [entry 05](/log/05-what-is-
 *\*Since the research is thin, any settle time I measure on myself gives later users of Eudaemon a first guess with a measurement behind it.*
 
 ---
-
-**This week's files.** The 2 figures in this entry, in light and dark · the QA run record.
 
 **Next.** The next test on the list.

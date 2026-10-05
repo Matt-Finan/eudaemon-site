@@ -196,6 +196,4 @@ On any one person, very little. ρ has been measured in a small number of studie
 
 ---
 
-**This week's files.** The interactive equation · the QA run record.
-
 **Next.** M.

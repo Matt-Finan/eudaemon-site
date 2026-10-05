@@ -56,6 +56,4 @@ Dividing clock 2 by clock 1 gives a ratio, and the test is how those ratios fall
 
 ---
 
-**This week's files.** The 4 figures in this entry, in light and dark · the QA run record.
-
 **Next.** The next test on the list.

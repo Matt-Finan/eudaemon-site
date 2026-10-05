@@ -3,7 +3,7 @@ title: The blueprint
 date: 2026-08-02
 series: 1
 status: entry
-revisions: 2 (31.08.2026, 05.10.2026)
+revisions: 3 (31.08.2026, 05.10.2026, 05.10.2026)
 summary: No code yet, on purpose. The idea was broken into parts, attacked by 8 independent AI reviewers and rebuilt into a blueprint worth testing.
 ---
 
@@ -39,9 +39,11 @@ So the week's output is the blueprint, version 3, where every part can be traced
 
 Coming next. Entry 02: the tests. Each one gets its pass mark and its fail mark written down before it runs, so I can't move the goalposts afterwards.
 
----
+::: revised 05.10.2026
+Not every test turned out to have a pass mark. ρ, β, f and M are measurements: each feeds the cost of a cause rather than passing or failing, so [entry 02](/log/02-watch-or-try/) and the entries since set none. A test that decides something still gets its marks written down before it runs.
+:::
 
-**This week's files.** Blueprint v0.3 · 8 review sets, kept word for word · the 39 testable pieces · the 138 engineering assumptions.
+---
 
 **Changed my mind.** Eudaemon isn't a camera pointed at my life; it's part of the life it measures, and has to be designed that way.
 
