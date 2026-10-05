@@ -3,7 +3,7 @@ title: About
 layout: page.njk
 permalink: /about/
 started: 25.07.2026
-updated: 29.09.2026
+updated: 05.10.2026
 ---
 
 I'm Matt Finan, an AI security consultant; Eudaemon is a thing I'm building.
