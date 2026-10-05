@@ -29,6 +29,26 @@ That's it. The site rebuilds itself; the entry is live at eudaemon.uk in about a
 
 Open the file on github.com, click the **pencil icon**, change it, **Commit changes**. Same for the About page: `src/about.md`.
 
+## Entries with figures
+
+1. Upload the figures first: **`src/assets` → Add file → Upload files**, drag in the entry's SVGs (named `entryNN-something.svg`), **Commit changes**.
+2. Then the entry itself: **`src/posts` → Add file → Upload files**, drag in the `.md`, **Commit changes**. Uploading a prepared file beats pasting: the header, the links and any equations arrive exactly as checked.
+3. In the entry, a figure is a line of its own: `![What the figure shows, in words](/assets/entryNN-something.svg)`.
+4. **A caption is one wholly italic line straight under its figure:** `*One sentence saying what to look at.*` It renders small and grey. Any other paragraph under a figure stays normal text.
+
+## Interactive entries
+
+An entry can carry its own HTML, styles and script inside the `.md` (entry 05's equation does): the site's markdown lets HTML through untouched, and nothing goes in `src/assets`. Keep the HTML block free of blank lines (a blank line hands the rest back to markdown); keep the definitions once, in a `<dl>`, so readers without JavaScript and the RSS feed still get them; look at it on a phone-sized screen before uploading.
+
+## Two traps in GitHub's editor
+
+- **The search bar's replace box holds one line.** Anything with a line break (a header line under another, a revised box) pasted there lands on one line and breaks: a header error, or a box shown as raw text with `:::`. Paste multi-line text into the file itself, or upload the whole corrected file (the same name replaces it).
+- **Enter at the end of a list item starts a new item by itself** (`- `). Paste a list line without its own `- `.
+
+## Check it worked
+
+The **Actions** tab shows a green tick per commit. Then open the page with `?v=` and anything new on the end (`eudaemon.uk/log/05-what-is-the-cost-of-beta/?v=2`): pages are cached for a few minutes, and the ending skips the cache.
+
 ## Change your mind in public (the whole point of the site)
 
 When a new entry overturns something an older entry said:
@@ -43,7 +63,7 @@ When a new entry overturns something an older entry said:
 
 2. In the old entry's front matter, change `revisions: none yet` to a count or note, e.g. `revisions: 1 (12.08.2026)`
 
-The `::: revised` block renders as the gold-edged box; the original text stays put. Never silently rewrite history; that's the one rule.
+The `::: revised` block renders as the gold-edged box; the original text stays put. Never silently rewrite history; that's the one rule. The one exception: a name brought in line with later entries, where no claim changes, is edited in place.
 
 ## Update the "Now:" line on the homepage
 
@@ -51,7 +71,7 @@ It lives in `src/_data/site.json`, fields `now` and `nowUpdated`. Edit, commit.
 
 ## Things you never need to touch
 
-`.eleventy.js`, `.github/`, `package.json`, `package-lock.json`, `src/_includes/`, `src/assets/`. They're the machinery. If something breaks and the Actions tab is red, paste the error into a Claude session; the whole site is plain files and any competent session can fix it.
+`.eleventy.js`, `.github/`, `package.json`, `package-lock.json`, `src/_includes/`, and `src/assets/` apart from uploading an entry's figures. They're the machinery. If something breaks and the Actions tab is red, paste the error into a Claude session; the whole site is plain files and any competent session can fix it.
 
 ## The one-time setup
 
