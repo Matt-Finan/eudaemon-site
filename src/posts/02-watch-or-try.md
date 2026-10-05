@@ -2,7 +2,8 @@
 title: Watch or try
 date: 2026-08-30
 series: 2
-status: entry revisions: 1 (05.10.2026)
+status: entry
+revisions: 1 (05.10.2026)
 summary: Why Eudaemon needs causes rather than patterns, and the one number, measured before anything is built, that decides whether it becomes a reader of one's records or an engine for small experiments.
 ---
 
