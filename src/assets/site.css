@@ -144,7 +144,7 @@ article ul > li::before { content: ""; display: inline-block; width: 0.34em; hei
 article blockquote { margin: 1.4rem 0; padding: 0 0 0 1rem; border-left: 2px solid var(--rule); color: var(--fg-soft); font-style: italic; }
 article hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
 article img { display: block; max-width: 100%; height: auto; margin: 1.6rem 0 0.5rem; }
-article p:has(> img) + p { font-size: 0.85rem; color: var(--meta); margin-top: -0.2rem; }
+article p:has(> img) + p:has(> em:only-child) { font-size: 0.85rem; color: var(--meta); margin-top: -0.2rem; }
 article img[src$=".svg"] { width: 100%; }
 figure { margin: 1.6rem 0; }
 article code { font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace; font-size: 0.85em; background: var(--card); padding: 0.1em 0.35em; border-radius: 3px; }
