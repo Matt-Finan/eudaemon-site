@@ -3,6 +3,7 @@ title: How fast can a trial reach an answer?
 date: 2026-09-26
 series: 4
 status: entry
+revisions: 1 (05.10.2026)
 summary: How many clean comparisons can one day hold? That number, f, depends on how long an intervention's effect takes to fade, and the more comparisons a day holds, the sooner a trial reaches an answer.
 ---
 
@@ -43,6 +44,10 @@ Most questions, I expect, are paced by their outcome, not by the coin. For examp
 ## Importance to Eudaemon
 
 "f" contributes to "T", the cost, in days, of establishing a cause's direction and β. This cost must be justified by how much benefit it provides the person (a separate set of tests will measure benefit). If causes turn out to be worth a great deal, trials are worth running even when they take years. If f is too low, it becomes likely that causes will be unfeasible to calculate, and Eudaemon needs to make them a niche requirement for extremely high-stakes questions.
+
+::: revised 05.10.2026
+T is now written T<sub>β</sub>, the days to β, and [entry 05](/log/05-what-is-the-cost-of-beta/) sets out the whole equation it belongs to.
+:::
 
 *\*Since the research is thin, any settle time I measure on myself gives later users of Eudaemon a first guess with a measurement behind it.*
 
